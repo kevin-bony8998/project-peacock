@@ -18,12 +18,3 @@ export const TimeLineDataQuery = gql`
         }
     }
 `;
-
-export const TrialQuery= gql`{
-        getPokemon(pokemon: dragonite) {
-          sprite
-          num
-          species
-          color
-        }
-}`;
