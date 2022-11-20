@@ -11,7 +11,7 @@ export interface CardDataProps {
 }
 
 export interface TechProps {
-    items: TechItemProps;
+    items: TechItemProps[];
 }
 
 export interface TechItemProps {
@@ -23,4 +23,14 @@ export interface TechItemProps {
 export interface CardComponentProps {
     cardData: CardDataProps;
     id: number;
+}
+
+export interface TechStackComponentProps {
+    techStack: TechProps;
+    id: number;
+}
+
+export interface TechPopUpsOpenProps {
+    currentOpenPopUp?: number;
+    setCurrentOpenPopUp?: any;
 }
