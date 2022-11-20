@@ -23,6 +23,7 @@ h1 {
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
+	background-clip: text;
 	text-transform: capitalize;
 	font-size: 120px;
 	margin: 10px 0;
