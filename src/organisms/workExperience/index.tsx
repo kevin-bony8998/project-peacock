@@ -2,18 +2,19 @@ import React from 'react';
 import { Styled } from './index.styles';
 import { CardDataProps } from '../../index.types';
 import TimelineComponent from '../../molecules/timelineComponent';
+import { useQuery } from '@apollo/client';
+import { TimeLineDataQuery } from '../../queries/queries';
 
 export default function WorkExperience() {
-    const timelineData: CardDataProps[] = [
-        {
-            year: "2021",
-            description: "Joined as a frontend developer at Deloitte USI."
-        },
-        {
-            year: "2021",
-            description: "Joined as a frontend developer at Deloitte USI."
-        }
-    ];
+    const { loading, error, data } = useQuery(TimeLineDataQuery);
+    if (loading) return <p>Loading...</p>
+    if (error) {
+        console.log(`[graphQlError][useQuery] Ran into an error while fetching the data. This is the error: ${error}`);
+    }
+    else {
+        console.log(`[graphQlSuccess][useQuery] Got the data from graphQL: ${JSON.stringify(data)}`);
+    }
+    const timelineData = data?.workExperienceCardDataEntriesCollection?.items;
     return (
         <>
             <Styled>
