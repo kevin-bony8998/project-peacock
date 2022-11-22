@@ -27,7 +27,11 @@ export default function WorkExperience() {
                 <Styled>
                     <div className="work-deets">
                         <div className="section-title">
-                            <h1>Professional Experience:</h1>
+                            <h1>Professional Experience:</h1> 
+                            
+                            <span className="twitter">
+
+                            </span>
                         </div>
                         <div className="section-content">
                             <TimelineComponent timelineData={timelineData}/>
