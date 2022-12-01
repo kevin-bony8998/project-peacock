@@ -3,7 +3,8 @@
 .App {
 	font-family: "Montserrat";
   text-align: center;
-  background-color: black;
+  background: rgb(0,0,0);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 100%);
 }
 
 .scroll-component {

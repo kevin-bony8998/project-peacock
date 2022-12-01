@@ -1,9 +1,9 @@
 import React, { useState, createContext } from 'react';
 import { Styled } from './index.styles';
 import { TechPopUpsOpenProps } from '../../index.types';
-import TimelineComponent from '../../molecules/timelineComponent';
 import { useQuery } from '@apollo/client';
 import { TimeLineDataQuery } from '../../queries/queries';
+import WorkExperienceCarousel from '../../molecules/workExperienceCarousel';
 
 export const TechPopUpOptions = createContext<TechPopUpsOpenProps>({
     currentOpenPopUp: -1
@@ -30,7 +30,7 @@ export default function WorkExperience() {
                             <h1>Professional Experience:</h1>
                         </div>
                         <div className="section-content">
-                            <TimelineComponent timelineData={timelineData}/>
+                            <WorkExperienceCarousel timelineData={timelineData}/>
                         </div>
                     </div>
                 </Styled>
