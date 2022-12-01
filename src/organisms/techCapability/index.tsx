@@ -7,7 +7,10 @@ export default function TechCapability() {
         <>
             <Styled>
                 <div className="tech-deets">
-                    <p>I'm comfortable using the following:</p>
+                    <p className="tech-section-subheading">Technologies I've already used:</p>
+                    <div className="technology-section">
+                        
+                    </div>
                 </div>
             </Styled>
         </>
