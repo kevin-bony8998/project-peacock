@@ -4,6 +4,8 @@ import styled from 'styled-components';
 export const Styled = styled.div`
 body {
 	background-color: #010;
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 100%);
 }
 
 .title {
