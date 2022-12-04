@@ -27,7 +27,7 @@ export default function WorkExperience() {
                 <Styled>
                     <div className="work-deets">
                         <div className="section-title">
-                            <h1>Professional Experience:</h1>
+                            <h1>Professional Experience</h1>
                         </div>
                         <div className="section-content">
                             <WorkExperienceCarousel timelineData={timelineData}/>

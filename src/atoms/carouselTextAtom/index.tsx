@@ -9,9 +9,9 @@ export default function CarouselTextAtom({cardData, id}: CardComponentProps) {
                 <div className="text-atom">
                     <div className="technology-section">
                         <div className="timeline-card">
-                            <p className="timeline-year">
+                            <h1 className="timeline-year">
                                 {cardData?.year}
-                            </p>
+                            </h1>
                             <div className="timeline-description">
                                 {cardData?.description}
                             </div>

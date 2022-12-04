@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Styled = styled.div`
 //700079
 .text-atom {
-    color:#700079;
+    color: gold;
     font-weight: 700;
 }
 `;
