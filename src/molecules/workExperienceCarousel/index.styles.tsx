@@ -5,7 +5,7 @@ export const Styled = styled.div`
 .work-experience-carousel {
     width: 90%;
     margin: auto;
-    background: #84bee557;
+    background: #000;
     height: 400px;
     border-radius: 20px;
     position: relative;
@@ -39,9 +39,9 @@ export const Styled = styled.div`
                 transform: translate(-50%,25%);
                 transform: rotate(0deg);
                 width: 100%;
-                /* .active-class {
-                    opacity: 1 !important;
-                } */
+                .active-class {
+                    z-index: 100000 !important;
+                }
                 .card-container {
                     position: relative;
                     /* animation: anim-ball 5s linear infinite; */
@@ -55,19 +55,22 @@ export const Styled = styled.div`
                         .image-card-atom {
                             width: 50%;
                             height: 400px;
-                            border-radius: 20px 0px 0px 20px;
-                            &:nth-child(3n + 1) {
-                                background: #F5D40A;
+                            border-radius: 0px 20px 20px 0px;
+                            &:nth-child(3n + 2) {
+                                background: #3F3F3F;
                             }
                         }
                         .text-card-atom {
                             width: 50%;
                             height: 400px;
-                            border-radius: 0px 20px 20px 0px;
-                            &:nth-child(3n + 2) {
-                                background: #F7E300;
+                            border-radius: 20px 0px 0px 20px;
+                            &:nth-child(3n + 1) {
+                                background: #464646;
                             }
                         }
+                    }
+                    .currently-displayed-class {
+                        z-index: 10000;
                     }
                 }
             }
@@ -80,5 +83,8 @@ export const Styled = styled.div`
 }
 .hide-class {
     display: none !important;
+}
+.old-class {
+    display: none;
 }
 `;

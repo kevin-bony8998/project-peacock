@@ -7,9 +7,9 @@ export default function CarouselImageAtom({techStack, id}: TechStackComponentPro
         <>
             <Styled>
                 <div className="image-card-atom-container">
-                    <p className="tech-section-subheading">
-                        Technologies I used in this position:
-                    </p>
+                    <h1 className="tech-section-subheading">
+                        Technologies I used in this position
+                    </h1>
                     <div className="technology-section">
                         {techStack.items.map((item, key) =>
                             <div className="individual-tech-item">

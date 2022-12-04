@@ -4,10 +4,12 @@ import styled from 'styled-components';
 export const Styled = styled.div`
 .image-card-atom-container {
     border-radius: 20px 0px 0px 20px;
-    color:#700079;
+    color: gold;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
     .tech-section-subheading {
-        color:#700079;
+        color: gold;
         font-weight: 700;
     }
     .technology-section {
